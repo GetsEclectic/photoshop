@@ -35,7 +35,7 @@ for(var i = 0; i <= numColors; i++){
 
     ad.selection.select([[xCoord,yCoord],[xCoord+swatchWidth,yCoord],[xCoord+swatchWidth,yCoord+swatchHeight],[xCoord,yCoord+swatchHeight]],
         SelectionType.REPLACE, 0, false);
-    ad.selection.stroke(newColor, 1);
+    ad.selection.fill(newColor);
 
     columnIndex++;
     if( columnIndex >= numSquaresPerRow ){
