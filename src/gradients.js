@@ -12,11 +12,6 @@ var swatchWidth = 64;
 var swatchHeight = 64;
 var spacing = 0.2;
 
-var gradientColor = new SolidColor;
-gradientColor.hsb.brightness = 0;
-gradientColor.hsb.hue = 0;
-gradientColor.hsb.saturation = 0;
-
 function getBWGradientColor(colorIndex, numColors){
     var gradientColor = new SolidColor;
     gradientColor.hsb.brightness = 100 * (colorIndex / numColors);
